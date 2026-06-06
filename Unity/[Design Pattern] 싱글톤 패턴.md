@@ -1,6 +1,6 @@
-# Singleton Pattern
+# 싱글톤 패턴 (Singleton Pattern)
 
-- **Date**: 2026-06-04
+- **Date**: 2026-06-06
 - **Tags**: #Unity #DesignPattern #Architecture
 
 ## 1. 개요 (Overview)
@@ -112,12 +112,6 @@ public abstract class Singleton<T> : MonoBehaviour where T : MonoBehaviour
             Instance = null;
     }
 }
-
-// 사용
-public class AudioManager : Singleton<AudioManager>
-{
-    public void PlaySFX(string clipName) { /* ... */ }
-}
 ```
 
 `DontDestroyOnLoad`가 필요한 매니저만 하위 클래스에서 `Awake`를 override해 추가합니다.
@@ -170,7 +164,7 @@ flowchart TD
 
 ## 8. 관련 패턴
 
-- **Object Pooling**: 풀 매니저를 싱글톤으로 두는 경우가 많음 → [object_pooling_pattern.md](./object_pooling_pattern.md)
+- **오브젝트 풀링(Object Pooling)**: 풀 매니저를 싱글톤으로 두는 경우가 많음 → [[Design Pattern] 오브젝트 풀링 패턴](./%5BDesign%20Pattern%5D%20%EC%98%A4%EB%B8%8C%EC%A0%9D%ED%8A%B8%20%ED%92%80%EB%A7%81%20%ED%8C%A8%ED%84%B4.md)
 - **Service Locator**: 싱글톤의 전역 접근성은 유지하되, 등록·조회를 한곳에 모음
 - **ScriptableObject Architecture**: 전역 상태 대신 에셋 기반 이벤트/변수 공유
 
