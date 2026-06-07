@@ -69,7 +69,7 @@ public void TakeDamage(int amount) { ... }
 2. 일반 `private` 필드
 3. 프로퍼티 (`public` / `private` 포함)
 
-- 클래스 내부에서만 쓰는 `private` 메서드는 **항상 맨 아래** `#region 내부 메서드`에 모아 **외부 API와 내부 구현을 한눈에 구분**
+- 클래스 내부에서만 쓰는 `private` 메서드는 **항상 맨 아래** `#region 내부 메서드`에 모아 **외부 API와 내부 구현을 한눈에 구분** (단, 내부 메서드가 없는 경우에는 해당 #region을 작성하지 않는다)
 
 ```csharp
 [SerializeField] private float _maxHealth = 100f;
