@@ -129,3 +129,4 @@ if (!IsValidTarget(target)) { return; }
 | 오브젝트 검색 | `Find` / `GameObject.Find`는 **초기화 시 1회만** 호출 후 캐시 |
 | 로그 | 정보 `Debug.Log` · 경고 `LogWarning` · 오류 `LogError` |
 | null 참조 방지 | 사용 전 참조 검사, `[SerializeField]` 필드는 Inspector 할당 확인 |
+| Inspector 노출 | `[SerializeField]` 필드 사용 시 위에 `[Header("한글 필드명")]` 명시 |
