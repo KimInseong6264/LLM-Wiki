@@ -1,6 +1,6 @@
-# 코딩 스타일 규칙 (C# / Unity)
+﻿# 코딩 스타일 규칙 (C# / Unity)
 
-프로젝트에 관계없이 공통으로 적용하는 C# · Unity 코딩 컨벤션.
+프로젝트에 관계없이 공통으로 적용하는 C# · Unity 코딩 컨벤션 및 본 프로젝트(`Event_Channel`, `Monster`, `System`, `DropItems` 폴더 등)에서 특화되어 사용하는 규칙을 정의합니다.
 
 ---
 
@@ -15,9 +15,10 @@
 | 메서드 | PascalCase | `TakeDamage()`, `Move()` |
 | 지역 변수 / 매개변수 | camelCase | `damageAmount`, `targetPos` |
 | 상수 | ALL_CAPS | `MAX_HEALTH`, `DEFAULT_SPEED` |
-| 열거형 멤버 | PascalCase (C# 관례) | `ItemType.Weapon`, `State.Idle` |
+| 열거형 멤버 | PascalCase (C# 관례) 또는 상황에 따른 SCREAMING_SNAKE_CASE | `ItemType.Weapon`, `State.Idle`, `DROP_ITEM_TYPE` |
 | bool 필드 · 프로퍼티 | `Is` / `Has` / `Can` 접두사 | `IsAlive`, `HasWeapon`, `CanMove` |
 | 이벤트 · 콜백 | `On` 접두사 | `OnHealthChanged`, `OnDeath` |
+| ScriptableObject 이벤트 채널 | `SO` 접미사 | `DropRequestEventChannelSO` |
 
 ---
 
@@ -59,7 +60,7 @@ public void TakeDamage(int amount) { ... }
 | 순서 | 구분 | 내용 |
 |------|------|------|
 | 1 | 필드 · 프로퍼티 | 클래스 **최상단** (하위 순서 참고) |
-| 2 | Unity 생명주기 | `Awake`, `OnEnable`, `Start`, `Update` 등 |
+| 2 | Unity 생명주기 | `Awake`, `OnEnable`, `Start`, `Update`, `OnDisable` 등 |
 | 3 | public API | 외부에서 호출하는 `public` 메서드 |
 | 4 | 내부 메서드 | `#region 내부 메서드`에 `private` 메서드 묶기 |
 
@@ -130,3 +131,6 @@ if (!IsValidTarget(target)) { return; }
 | 로그 | 정보 `Debug.Log` · 경고 `LogWarning` · 오류 `LogError` |
 | null 참조 방지 | 사용 전 참조 검사, `[SerializeField]` 필드는 Inspector 할당 확인 |
 | Inspector 노출 | `[SerializeField]` 필드 사용 시 위에 `[Header("한글 필드명")]` 명시 |
+| 에디터 편의성 메서드 | 인스펙터 우클릭 메뉴로 노출할 디버그용 메서드는 `[ContextMenu("메뉴명")]`을 명시 |
+| 에디터 전용 드로잉 | 기즈모 드로잉 등 에디터 전용 로직은 `#if UNITY_EDITOR` 및 `#endif` 전처리기로 감싸 빌드 제외 처리 |
+| 이벤트 채널 설계 | ScriptableObject 기반 이벤트를 사용하여 클래스 간의 느슨한 결합(Decoupling)을 권장 |
