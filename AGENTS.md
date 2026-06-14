@@ -22,6 +22,7 @@ Unity 게임 개발자의 개인 지식 베이스입니다.
 - `[Git]` : Git 버전 관리 관련
 
 **Unity/**
+- `[UnityEngine]` : Unity 엔진 일반 지식 (생명주기, 기본 개념, 시스템 전반)
 - `[Design Pattern]` : 디자인 패턴 (예: [Design Pattern] 상태 패턴.md)
 - `[Graphics]` : 셰이더, 렌더링 관련
 - `[Physics]` : 물리 엔진 관련
