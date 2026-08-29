@@ -44,6 +44,12 @@ public float CurrentHealth => _health;
 public void TakeDamage(int amount) { ... }
 ```
 
+### 메서드 주석
+
+- `public` API: `/// <summary>` 3줄 형식
+- 그 외(`private` / `protected`): `//` 한 줄 주석 또는 필요 시 XML doc
+- 간단한 로직은 주석 생략 가능
+
 ---
 
 ## 3. 코드 구조
@@ -52,6 +58,7 @@ public void TakeDamage(int amount) { ... }
 - public 멤버 노출이 필요하면 **필드 대신 프로퍼티** 사용
 - 복잡한 로직은 **메서드로 분리**해 한 메서드가 한 가지 일만 하도록 유지
 - 본문이 한 줄로 끝나는 메서드는 **람다식(`=>`)**으로 표현
+- 동일한 구조가 반복되는 메서드는 공통 로직을 추출하고 호출부는 `=>` 표현식 본문으로 위임만 하도록 간결하게 유지
 
 ### 파일 · 클래스
 
@@ -132,6 +139,11 @@ if (!IsValidTarget(target))
 
 // 이후 로직
 ```
+
+### using 지시문 단축
+
+- 자주 사용되는 타입은 `using` 지시문을 추가하여 짧게 사용한다 (예: `UnityEngine.Events.UnityEvent` → `UnityEvent`)
+- 네임스페이스 충돌이 발생할 경우 유저에게 알리고 선택지를 요청한다
 
 ---
 
