@@ -2,6 +2,7 @@
 
 - **Date**: 2026-06-14
 - **Tags**: #Unity #Lifecycle #MonoBehaviour #EventFunction
+- **Related**: [[[Code] EventChannel]]
 
 ---
 

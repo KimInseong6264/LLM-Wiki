@@ -2,6 +2,7 @@
 
 - **Date**: 2026-06-06
 - **Tags**: #Unity #DesignPattern #Singleton
+- **Related**: [[[Code] EventChannel]]
 
 ---
 
