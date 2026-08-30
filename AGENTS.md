@@ -19,7 +19,8 @@ Unity 게임 개발자의 개인 지식 베이스입니다.
 **CS_knowledge/**
 - `[CSharp]` : C# 언어 및 Unity 스크립팅 관련
 - `[CS]` : 컴퓨터 과학 전반 (알고리즘, 네트워크, 자료구조, OS 등)
-- `[Git]` : Git 버전 관리 관련
+- `[Git]` : Git 버전 관리 관련 (커밋, 브랜치, 머지, PR 워크플로 등 GitHub 없이도 성립하는 개념)
+- `[Web]` : 웹 개발 도구 및 인프라 (npm, 정적 사이트 생성기, GitHub Pages/Actions, Cloudflare Workers 등 호스팅·CI/CD·패키지 관리). 기준: "GitHub 없이 Git만으로 성립하면 [Git], 아니면 [Web]"
 
 **Unity/**
 - `[UnityEngine]` : Unity 엔진 일반 지식 (생명주기, 기본 개념, 시스템 전반)

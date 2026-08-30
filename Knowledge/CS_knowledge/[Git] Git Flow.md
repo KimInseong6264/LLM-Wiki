@@ -2,6 +2,7 @@
 
 - **Date**: 2026-06-06
 - **Tags**: #Git #GitFlow #BranchingStrategy
+- **Related**: [[[Web] npm]], [[[Web] Static Site Generator]]
 
 ---
 
