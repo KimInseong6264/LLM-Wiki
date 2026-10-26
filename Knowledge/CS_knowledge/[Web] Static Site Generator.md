@@ -2,7 +2,7 @@
 
 - **Date**: 2026-08-30
 - **Tags**: #Web #SSG #StaticSite #Quartz #Markdown #HTML
-- **Related**: [[[Web] npm]], [[[Git] Git Flow]]
+- **Related**: [[[Web] npm]], [[[Project] LLM Wiki Site]], [[[Git] Git Flow]]
 
 ---
 

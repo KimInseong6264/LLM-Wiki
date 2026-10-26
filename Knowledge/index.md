@@ -14,6 +14,7 @@ Unity 게임 개발자의 개인 지식 베이스입니다. 공부한 내용, �
 | `Unity/` | 엔진 지식, 디자인 패턴, 그래픽스, 물리, UI, 최적화 | `[UnityEngine]` `[Design Pattern]` `[Graphics]` `[Physics]` `[UI]` `[Optimization]` |
 | `Code_snippets/` | 재활용 코드 (`.cs` 원본 + `[Code]` 설명 문서) | `[Code]` |
 | `Debug_log/` | 트러블슈팅 기록, 버그 해결 과정 | `[Debug]` |
+| `Projects/` | 프로젝트 단위 기록 (설계, 아키텍처, 결정 이유, 진행 과정) | `[Project]` |
 
 왼쪽 탐색기에서 폴더별 문서 목록을 볼 수 있고, 상단 검색으로 본문 검색이 됩니다.
 
@@ -34,6 +35,9 @@ Unity 게임 개발자의 개인 지식 베이스입니다. 공부한 내용, �
 ### 3) Code_snippets
 - [[[Code] AStar]] — Tilemap 기반 A* 경로 탐색
 - [[[Code] EventChannel]] — ScriptableObject 이벤트 채널
+
+### 4) Projects
+- [[[Project] LLM Wiki Site]] — 이 위키 사이트 구축 프로젝트 (허브)
 
 # 3. 작성 규칙
 

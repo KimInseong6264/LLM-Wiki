@@ -2,7 +2,7 @@
 
 - **Date**: 2026-08-30
 - **Tags**: #Web #npm #NodeJS #PackageManager #DependencyManagement
-- **Related**: [[[Web] Static Site Generator]], [[[Git] Git Flow]]
+- **Related**: [[[Web] Static Site Generator]], [[[Project] LLM Wiki Site]], [[[Git] Git Flow]]
 
 ---
 
