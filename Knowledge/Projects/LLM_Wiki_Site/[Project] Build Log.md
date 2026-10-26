@@ -22,12 +22,12 @@
 |---|---|---|---|
 | 2026-08-27 | 설계 | 목표·아키텍처·기술 선택 확정 | — |
 | 2026-08-29 | 설계 | 작업을 목적 단위(A~G)로 재분류. `Code_snippets` 운영 방식, 동기화 방식 확정 | — |
-| 2026-08-29 | A1 | 미커밋 변경 커밋 | `8278c98` |
-| 2026-08-29 | A2 | `[Code] AStar.md`, `[Code] EventChannel.md` + Unity 문서에 역방향 링크 | `833d576` |
-| 2026-08-29 | A3 | `Knowledge/index.md` 홈 문서 + AGENTS.md 예외 규칙 | `c42c6b2` |
+| 2026-08-29 | A1 | 미커밋 변경 커밋 | `3fecd2f` |
+| 2026-08-29 | A2 | `[Code] AStar.md`, `[Code] EventChannel.md` + Unity 문서에 역방향 링크 | `bc77f12` |
+| 2026-08-29 | A3 | `Knowledge/index.md` 홈 문서 + AGENTS.md 예외 규칙 | `d5710d9` |
 | 2026-08-30 | C1 | Quartz v4.5.2 클론 + `npm ci` (임시 폴더) | — |
-| 2026-08-30 | 문서 | `[Web]` 태그 신설, `[Web] npm.md`, `[Web] Static Site Generator.md` | `49328f4` |
-| 2026-08-30 | 구조 | `Projects/` 폴더·`[Project]` 태그 신설, 이 프로젝트 허브·진행 기록 문서 작성 | — |
+| 2026-08-30 | 문서 | `[Web]` 태그 신설, `[Web] npm.md`, `[Web] Static Site Generator.md` | `e23b950` |
+| 2026-08-30 | 구조 | `Projects/` 폴더·`[Project]` 태그 신설, 이 프로젝트 허브·진행 기록 문서 작성 | `42723fa` |
 
 # 2. 상세 기록
 
